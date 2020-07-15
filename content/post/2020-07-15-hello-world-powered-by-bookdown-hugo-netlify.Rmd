@@ -1,0 +1,27 @@
+---
+title: Hello World - Powered by R, Bookdown, Github, Hugo & Netlify
+author: Matt Rowse
+date: '2020-07-15'
+slug: hello-world-powered-by-bookdown-hugo-netlify
+categories: []
+tags:
+  - blog
+  - R Markdown
+  - R
+  - Hugo
+  - Bookdown
+  - Netlify
+---
+
+# But, why?
+Over the last year, I have been fortunate to have time to reflect and refocus on what is important to me personally and professionally, taking learnings from a career in Retail Management, eCommerce Operations & Fulfilment.
+
+Having had exposure to high level decision making in an eCommerce world inside a large multi brand corporate, it has become increasingly clear to me that handling big data to gain and share insights would be the next business frontier. Demand will likely be fuelled by market share gains companies using advanced analytics and machine learning make, to gain customer insights leading future strategy, setting the pace for others to pivot and catch. Managing and manipulating big data hasn't been a core capability for any of the executives I have worked with to date, meaning they will need to buy capability to plug the gap.
+
+With eCommerce sales forecasts of strong growth for some time to come also (powered by various API's and data imports/exports), I generally expect demand for data experts to outsrip supply, leading to career opportunities for segment experts at reasonable remuneration and for me, what I find to be interesting work, helping people to make better decisions. 
+
+Hence I began my journey to determine which language or tool to learn data science, as "even a journey of 500 miles starts with a single step." A pretty daunting task, for a 40 year old Retail veteran.
+
+So far I have to say this learninf experience has been very rewarding though, with opportunities to deploy my new skills popping up quickly, as I continue to build capability.
+
+My intent with this blog is to share some real world business applications and nuggets I learn along the way while connecting with the data science and data development community. 

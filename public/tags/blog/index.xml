@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog on The Machine Learned It Online</title>
+    <link>/tags/blog/</link>
+    <description>Recent content in blog on The Machine Learned It Online</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 15 Jul 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hello World - Powered by R, Bookdown, Github, Hugo &amp; Netlify</title>
+      <link>/2020/07/15/hello-world-powered-by-bookdown-hugo-netlify/</link>
+      <pubDate>Wed, 15 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/07/15/hello-world-powered-by-bookdown-hugo-netlify/</guid>
+      <description>But, why?Over the last year, I have been fortunate to have time to reflect and refocus on what is important to me personally and professionally, taking learnings from a career in Retail Management, eCommerce Operations &amp;amp; Fulfilment.
+Having had exposure to high level decision making in an eCommerce world inside a large multi brand corporate, it has become increasingly clear to me that handling big data to gain and share insights would be the next business frontier.</description>
+    </item>
+    
+  </channel>
+</rss>

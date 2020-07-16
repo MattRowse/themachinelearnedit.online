@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Thu, 16 Jul 2020 21:48:51 -0700</pubDate>
+      
+      <guid>/about/</guid>
+      <description>This is the blog of Matt Rowse, a Brisbane based Kiwi and amateur R data wrangler. I&amp;rsquo;m in my early 40&amp;rsquo;s with a couple of great kids and partner, living in the so affordable Brisbane burbs - this is the life and no doubt why there are so many silver fern stickers plastered on VN Commodores around here. Chur bro&amp;rsquo;s.
+I blog, therefore I am and hey, it beats watching shitty tv.</description>
+    </item>
+    
+    <item>
       <title>For me the choice was Python or R</title>
       <link>/2020/07/16/for-me-the-choice-was-python-or-r/</link>
       <pubDate>Thu, 16 Jul 2020 00:00:00 +0000</pubDate>
@@ -29,15 +39,6 @@ I can’t remember where I saw this tip but for me it was the decider and someth
       <guid>/2020/07/15/hello-world-powered-by-bookdown-hugo-netlify/</guid>
       <description>But, why?Over the last year, I have been fortunate to have time to reflect and refocus on what is important to me personally and professionally, taking learnings away from a career in Retail Management, eCommerce Operations &amp;amp; Fulfilment.
 Having had exposure to high level decision making in an eCommerce world inside a large multi brand corporate, it has become increasingly clear to me that handling big data to gain and share insights would be the next business frontier.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>/about/</link>
-      <pubDate>Thu, 05 May 2016 21:48:51 -0700</pubDate>
-      
-      <guid>/about/</guid>
-      <description>This is a &amp;ldquo;hello world&amp;rdquo; example website for the blogdown package. The theme was forked from @jrutheiser/hugo-lithium-theme and modified by Yihui Xie.</description>
     </item>
     
   </channel>

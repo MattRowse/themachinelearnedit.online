@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Datacamp on The Machine Learned It Online</title>
+    <link>/tags/datacamp/</link>
+    <description>Recent content in Datacamp on The Machine Learned It Online</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 17 Jul 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/datacamp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Where do I start to learn R?</title>
+      <link>/2020/07/17/where-do-i-start-to-learn-r/</link>
+      <pubDate>Fri, 17 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/07/17/where-do-i-start-to-learn-r/</guid>
+      <description>Because at heart I am the frugal tight arsed type, when looking for what options were available to start my journey, I did some research that might save you some time.
+If you like to learn interactively, Datacamp is hard to go past, particularly if you take advantage of some of the free trial offers you might get signing up for active deals like this one that at the time of writing this gives you 2 months free access if you sign up with your details, plus some other goodies.</description>
+    </item>
+    
+  </channel>
+</rss>

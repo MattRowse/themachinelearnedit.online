@@ -2,7 +2,7 @@ baseurl = "/"
 languageCode = "en-us"
 title = "The Machine Learned It Online"
 theme = "hugo-lithium"
-googleAnalytics = ""
+googleAnalytics = "UA-172912816-1"
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 

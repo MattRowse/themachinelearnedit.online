@@ -1,0 +1,86 @@
+---
+title: How do I add Google adsense code to my Blogdown Hugo site?
+author: Matt Rowse
+date: '2020-07-21'
+slug: how-do-i-add-google-adsense-code-to-my-blogdown-hugo-site
+categories:
+  - R
+  - Google
+tags:
+  - R
+  - Blogdown
+  - Google
+  - Adsense
+---
+If you have started your own blog using Blogdown and Hugo, you might be wondering how to monetise your content to cover your operating costs. Sure, it may not be much but every little bit counts right.
+
+Well, today is your lucky day because I wondered this too and decided to write a blog post about it giving you the instructions to add advertising to Blogdown Hugo sites.
+
+So first things first, you will need to go and get an adsense account, which you can do [here](https://www.google.com/adsense/start/).
+
+Once you have signed in or signed up with your details, you will need to verify your site details. Through this process you will be provided with a script to add to your site header for verification. For the machinelearnedit.online it's this:
+
+```
+<script data-ad-client="ca-pub-9276584965858184" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+```
+
+To have this verified, the instructions say it must be saved in the site <Head> tags, which I had to hunt around for and after a while found them here:
+
+```
+themes>hugo-lithium(my theme)>layouts>partials>header.html
+```
+
+Edit the header.html file and add your Google adsense script between the <Head> and </Head> tags then save and deploy your site.
+
+You can now head back to Google adsense and confirm your verification code has been added to the site!
+
+Well, I have to say that was much easier than I thought it would be, though it took a bit of research to get here and I hope this saves you some time.
+
+Once you have submitted this information, your site will be reviewed, ahead of final confirmation your site content meets quality and quantity requirements. So best to get a few posts on the board before taking this step.
+
+Next, you will get to choose between Auto Ad's and Ad Units. Now auto ads, are probably what you think they are like driverless ai for advertising. You can try this out and if it is or isn't the look you are after, or you may want to use ad units which will be a bit more predictable if you like things to be more aesthetially pleasing to your eye.
+
+Here is a snippet of code that you can use to shortcut these ads in the future:
+```
+<script
+  async
+  src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+>
+</script>
+<ins
+  class="adsbygoogle"
+  style="display:block; text-align:center;"
+  data-ad-layout="in-article"
+  data-ad-format="fluid"
+  data-ad-client="ca-pub-xxxxxx"
+  data-ad-slot="xxxxx"
+>
+</ins>
+<script>
+  ;(adsbygoogle = window.adsbygoogle || []).push({})
+</script>
+```
+Right, so I think we have now covered:
+1. How to get an adsense account for your blog advertisements
+2. How to verify your site and where to put the script in your Blogdown powered Hugo site
+3. The code to put in your blog posts to allow the ad content to appear where you want it to
+
+Now hopefully, you'll see an ad below so you can get a view of what this looks like for real on the interweb.
+
+<script
+  async
+  src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+>
+</script>
+<ins
+  class="adsbygoogle"
+  style="display:block; text-align:center;"
+  data-ad-layout="in-article"
+  data-ad-format="fluid"
+  data-ad-client="ca-pub-9276584965858184"
+  data-ad-slot="00001"
+>
+</ins>
+<script>
+  ;(adsbygoogle = window.adsbygoogle || []).push({})
+</script>

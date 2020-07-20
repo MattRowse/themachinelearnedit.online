@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.74.1" />
+
+
+<title>How do I add Google adsense code to my Blogdown Hugo site? - The Machine Learned It Online</title>
+<meta property="og:title" content="How do I add Google adsense code to my Blogdown Hugo site? - The Machine Learned It Online">
+
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+<script data-ad-client="ca-pub-9276584965858184" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/about/">About</a></li>
+    
+    <li><a href="https://github.com/">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/rstudio">LinkedIn</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">3 min read</span>
+    
+
+    <h1 class="article-title">How do I add Google adsense code to my Blogdown Hugo site?</h1>
+
+    
+    <span class="article-date">2020-07-21</span>
+    
+
+    <div class="article-content">
+      
+
+
+<p>If you have started your own blog using Blogdown and Hugo, you might be wondering how to monetise your content to cover your operating costs. Sure, it may not be much but every little bit counts right.</p>
+<p>Well, today is your lucky day because I wondered this too and decided to write a blog post about it giving you the instructions to add advertising to Blogdown Hugo sites.</p>
+<p>So first things first, you will need to go and get an adsense account, which you can do <a href="https://www.google.com/adsense/start/">here</a>.</p>
+<p>Once you have signed in or signed up with your details, you will need to verify your site details. Through this process you will be provided with a script to add to your site header for verification. For the machinelearnedit.online it’s this:</p>
+<pre><code>&lt;script data-ad-client=&quot;ca-pub-9276584965858184&quot; async src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&quot;&gt;&lt;/script&gt;</code></pre>
+To have this verified, the instructions say it must be saved in the site
+<Head>
+<p>tags, which I had to hunt around for and after a while found them here:</p>
+<pre><code>themes&gt;hugo-lithium(my theme)&gt;layouts&gt;partials&gt;header.html</code></pre>
+Edit the header.html file and add your Google adsense script between the
+<Head>
+and
+</Head>
+<p>tags then save and deploy your site.</p>
+<p>You can now head back to Google adsense and confirm your verification code has been added to the site!</p>
+<p>Well, I have to say that was much easier than I thought it would be, though it took a bit of research to get here and I hope this saves you some time.</p>
+<p>Once you have submitted this information, your site will be reviewed, ahead of final confirmation your site content meets quality and quantity requirements. So best to get a few posts on the board before taking this step.</p>
+<p>Next, you will get to choose between Auto Ad’s and Ad Units. Now auto ads, are probably what you think they are like driverless ai for advertising. You can try this out and if it is or isn’t the look you are after, or you may want to use ad units which will be a bit more predictable if you like things to be more aesthetially pleasing to your eye.</p>
+<p>Here is a snippet of code that you can use to shortcut these ads in the future:</p>
+<pre><code>&lt;script
+  async
+  src=&quot;//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&quot;
+&gt;
+&lt;/script&gt;
+&lt;ins
+  class=&quot;adsbygoogle&quot;
+  style=&quot;display:block; text-align:center;&quot;
+  data-ad-layout=&quot;in-article&quot;
+  data-ad-format=&quot;fluid&quot;
+  data-ad-client=&quot;ca-pub-xxxxxx&quot;
+  data-ad-slot=&quot;xxxxx&quot;
+&gt;
+&lt;/ins&gt;
+&lt;script&gt;
+  ;(adsbygoogle = window.adsbygoogle || []).push({})
+&lt;/script&gt;</code></pre>
+<p>Right, so I think we have now covered:
+1. How to get an adsense account for your blog advertisements
+2. How to verify your site and where to put the script in your Blogdown powered Hugo site
+3. The code to put in your blog posts to allow the ad content to appear where you want it to</p>
+<p>Now hopefully, you’ll see an ad below so you can get a view of what this looks like for real on the interweb.</p>
+<script
+  async
+  src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+>
+</script>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-9276584965858184" data-ad-slot="00001">
+</ins>
+<script>
+  ;(adsbygoogle = window.adsbygoogle || []).push({})
+</script>
+
+    </div>
+    <p class="terms">
+  
+  
+  Categories:
+  
+  <a href='/categories/r'>R</a>
+  
+  <a href='/categories/google'>Google</a>
+  
+  
+  
+  
+  Tags:
+  
+  <a href='/tags/r'>R</a>
+  
+  <a href='/tags/blogdown'>Blogdown</a>
+  
+  <a href='/tags/google'>Google</a>
+  
+  <a href='/tags/adsense'>Adsense</a>
+  
+  
+  
+</p>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-172912816-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+  </body>
+</html>
+

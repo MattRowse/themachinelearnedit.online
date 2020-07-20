@@ -1,7 +1,7 @@
 ---
 title: Shiny, for sharing web based data applications
 author: Matt Rowse
-date: '2020-07-20'
+date: '2020-07-19'
 slug: shiny-for-sharing-web-based-data-applications
 categories:
   - R

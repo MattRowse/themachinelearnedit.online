@@ -6,17 +6,17 @@
     <description>Recent content in Google on The Machine Learned It Online</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/google/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How do I add Google adsense code to my Blogdown Hugo site?</title>
-      <link>/2020/07/21/how-do-i-add-google-adsense-code-to-my-blogdown-hugo-site/</link>
-      <pubDate>Tue, 21 Jul 2020 00:00:00 +0000</pubDate>
+      <link>/2020/07/20/how-do-i-add-google-adsense-code-to-my-blogdown-hugo-site/</link>
+      <pubDate>Mon, 20 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/07/21/how-do-i-add-google-adsense-code-to-my-blogdown-hugo-site/</guid>
+      <guid>/2020/07/20/how-do-i-add-google-adsense-code-to-my-blogdown-hugo-site/</guid>
       <description>If you have started your own blog using Blogdown and Hugo, you might be wondering how to monetise your content to cover your operating costs. Sure, it may not be much but every little bit counts right.
 Well, today is your lucky day because I wondered this too and decided to write a blog post about it giving you the instructions to add advertising to Blogdown Hugo sites.
 So first things first, you will need to go and get an adsense account, which you can do here.</description>

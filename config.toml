@@ -1,10 +1,12 @@
-baseurl = "/"
+baseurl = "https://themachinelearnedit.online"
 languageCode = "en-us"
 title = "The Machine Learned It Online"
 theme = "hugo-lithium"
 googleAnalytics = "UA-172912816-1"
-disqusShortname = ""
+disqusShortname = "@matthewrowse"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+enableRobotsTXT = true
+canonifyURLs = true
 
 [permalinks]
     post = "/:year/:month/:day/:slug/"

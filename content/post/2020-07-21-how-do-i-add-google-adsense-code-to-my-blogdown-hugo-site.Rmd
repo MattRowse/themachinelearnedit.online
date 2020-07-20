@@ -24,15 +24,15 @@ Once you have signed in or signed up with your details, you will need to verify 
 <script data-ad-client="ca-pub-9276584965858184" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 ```
 
-To have this verified, the instructions say it must be saved in the site <Head> tags, which I had to hunt around for and after a while found them here:
+To have this verified, the instructions say it must be saved in the site Head tags, which I had to hunt around for and after a while found them here:
 
 ```
 themes>hugo-lithium(my theme)>layouts>partials>header.html
 ```
 
-Edit the header.html file and add your Google adsense script between the <Head> and </Head> tags then save and deploy your site.
+Edit the header.html file and add your Google adsense script between the Head tags then save and deploy your site.
 
-You can now head back to Google adsense and confirm your verification code has been added to the site!
+You can now go back to Google adsense and confirm your verification code has been added to the site!
 
 Well, I have to say that was much easier than I thought it would be, though it took a bit of research to get here and I hope this saves you some time.
 

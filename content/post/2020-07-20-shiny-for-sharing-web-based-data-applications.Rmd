@@ -17,15 +17,15 @@ The challenge with the report approach of course is you spend time creating some
 
 Spending the time to understand Shiny can help build web based applications and make you shine, allowing the user to self engage the data and answer their own questions. Then you can spend your time doing the important stuff, building the cleaning and wrangling script code so the required options are available for all users, rather than just one.
 
-Having had experience inside a large retail business I KNOW this skillset is under-represented and will have growing demand in the future as data surrounds us, for those willing to spend the effort to learn the required skills there will be benefits.
+Having had experience inside a large retail business I KNOW this skillset is under-represented and will have growing demand in the future as data surrounds us. For those willing to spend the effort to learn the required skills there will be benefits as you can create greater value for your employer, whoever that may be.
 
-I suppose there are a few more skills if you want to be able to share widely, you'll need to be able to work with R to prepare the data, write Shiny code to make the interactive dashboard and then find a way to deploy this online and probably ensure there is some kind of authentication. 
+I suppose there are a few more skills required if you want to be able to share your app widely, you'll need to be able to work with R to prepare the data, write Shiny code to make the interactive dashboard, find a way to deploy this online and probably ensure there is some kind of authentication. 
 
 For now I'll introduce you to [Shiny](https://shiny.rstudio.com/) and some examples of Shiny dashboards in this [gallery](https://shiny.rstudio.com/gallery/).
 
 The code to create a Shiny dashboard is amazingly intuitive if you are starting with a basic app, which consists of a user interface file and server file.
 
-Below I'll give you an example of a very simple sigle file Shiny app, which you can paste into Rstudio and run.
+Below I'll give you an example of a very simple single file Shiny app, which you can paste into Rstudio and run.
 ```{r Shiny App, warning=FALSE}
 # Install Shiny if required, otherwise it will just load it
 if(!require(shiny)) install.packages("shiny", repos = "http://cran.us.r-project.org")
@@ -52,11 +52,11 @@ server <- function(input, output) {
 # shinyApp(ui = ui, server = server)
 ```
 
-Rstudio has a great tutorial that you can start to work through [here](https://shiny.rstudio.com/articles/).
+Rstudio has a great tutorial that you can start to work through [here](https://shiny.rstudio.com/articles/). Don't expect to master this overnight, it will take some applied effort. When you fail, which you will, you'll be one step closer to understanding coding Shiny and a step ahead ahead of those that give up at the first hurdle.
 
-I'll save the self deployment of shiny apps through your own instance for another article as this will be a bit lengthy in itself but you can deploy your apps using [Shinyapps.io](https://www.shinyapps.io/) which is also owned by Rstudio. They have pricing tiers for very low usage at $0 right through to enterprise plans that include the authentication and load balancing you will need at some point. By publishing even this example app through them you will get to see just how easy it could be to share your data insights through dashboards.
+I'll save the self deployment of shiny apps through your own instance for another article as this will be a bit lengthy in itself but you can deploy your apps using [Shinyapps.io](https://www.shinyapps.io/) which is also owned by Rstudio. They have pricing tiers for very low usage at $0 right through to enterprise plans that include the authentication and load balancing you will need at some point. By publishing even this example app through them, you will get to see just how easy it could be to share your data insights through dashboards in the future.
 
-Having seen the power of sharing insights like this my regret is I wasn't introduced to R and Shiny earlier in my career. I wasted so much time learning excel rather than mastering this, which can be applied across many segments. 
+Having seen the power of sharing insights like this my regret is I wasn't introduced to R and Shiny earlier in my career. I wasted so much time learning excel rather than mastering this language, which can be applied across many segments. 
 
-If you want some more inspiration, here's one more link through to the [2020 Annual Shiny Contest](https://blog.rstudio.com/2020/07/13/winners-of-the-2nd-shiny-contest/) where you can see the broad assortment of use cases.
+If you want some more inspiration, here's one more link through to the [2020 Annual Shiny Contest](https://blog.rstudio.com/2020/07/13/winners-of-the-2nd-shiny-contest/) where you can see the broad assortment of use cases competitors put forwards this year.
 

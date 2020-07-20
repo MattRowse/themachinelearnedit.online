@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>R on The Machine Learned It Online</title>
-    <link>/categories/r/</link>
-    <description>Recent content in R on The Machine Learned It Online</description>
+    <title>Shiny on The Machine Learned It Online</title>
+    <link>/tags/shiny/</link>
+    <description>Recent content in Shiny on The Machine Learned It Online</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 20 Jul 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/shiny/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,16 +19,6 @@
       <guid>/2020/07/20/shiny-for-sharing-web-based-data-applications/</guid>
       <description>After learning R for a few months, the code wasn’t looking quite so much like gibberish and I was becoming more curious about how to share these data insights on a wider scale, other than a static report.
 The challenge with the report approach of course is you spend time creating something for a specific scenario and if the business user has a resulting question, they may need to come back to you, with their query/request to view whatever it is they need and suddenly the business user is waiting for you, while you now have another task, to create another report with the specified one off metric and when that’s done, you’ll probably get another request.</description>
-    </item>
-    
-    <item>
-      <title>For me the choice was Python or R</title>
-      <link>/2020/07/16/for-me-the-choice-was-python-or-r/</link>
-      <pubDate>Thu, 16 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/2020/07/16/for-me-the-choice-was-python-or-r/</guid>
-      <description>Having decided to improve my capability in this space, I started to research available options. It became clear quite quickly that the choice would come down to Python or R for me, as both of these free and open sourced options had excellent reputations, fitted my budget and had a larged community of active users.
-I can’t remember where I saw this tip but for me it was the decider and something worth sharing:</description>
     </item>
     
   </channel>

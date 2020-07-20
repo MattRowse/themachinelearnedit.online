@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.74.1" />
+
+
+<title>Shiny, for sharing web based data applications - The Machine Learned It Online</title>
+<meta property="og:title" content="Shiny, for sharing web based data applications - The Machine Learned It Online">
+
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/about/">About</a></li>
+    
+    <li><a href="https://github.com/">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/rstudio">LinkedIn</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">3 min read</span>
+    
+
+    <h1 class="article-title">Shiny, for sharing web based data applications</h1>
+
+    
+    <span class="article-date">2020-07-20</span>
+    
+
+    <div class="article-content">
+      
+
+
+<p>After learning R for a few months, the code wasn’t looking quite so much like gibberish and I was becoming more curious about how to share these data insights on a wider scale, other than a static report.</p>
+<p>The challenge with the report approach of course is you spend time creating something for a specific scenario and if the business user has a resulting question, they may need to come back to you, with their query/request to view whatever it is they need and suddenly the business user is waiting for you, while you now have another task, to create another report with the specified one off metric and when that’s done, you’ll probably get another request. This is a vicious and unrelenting circle.</p>
+<p>Spending the time to understand Shiny can help build web based applications and make you shine, allowing the user to self engage the data and answer their own questions. Then you can spend your time doing the important stuff, building the cleaning and wrangling script code so the required options are available for all users, rather than just one.</p>
+<p>Having had experience inside a large retail business I KNOW this skillset is under-represented and will have growing demand in the future as data surrounds us, for those willing to spend the effort to learn the required skills there will be benefits.</p>
+<p>I suppose there are a few more skills if you want to be able to share widely, you’ll need to be able to work with R to prepare the data, write Shiny code to make the interactive dashboard and then find a way to deploy this online and probably ensure there is some kind of authentication.</p>
+<p>For now I’ll introduce you to <a href="https://shiny.rstudio.com/">Shiny</a> and some examples of Shiny dashboards in this <a href="https://shiny.rstudio.com/gallery/">gallery</a>.</p>
+<p>The code to create a Shiny dashboard is amazingly intuitive if you are starting with a basic app, which consists of a user interface file and server file.</p>
+<p>Below I’ll give you an example of a very simple sigle file Shiny app, which you can paste into Rstudio and run.</p>
+<pre class="r"><code># Install Shiny if required, otherwise it will just load it
+if(!require(shiny)) install.packages(&quot;shiny&quot;, repos = &quot;http://cran.us.r-project.org&quot;)</code></pre>
+<pre><code>## Loading required package: shiny</code></pre>
+<pre class="r"><code># Global variables can go here
+n &lt;- 200
+
+
+# Define the UI
+ui &lt;- bootstrapPage(
+  numericInput(&#39;n&#39;, &#39;Number of obs&#39;, n),
+  plotOutput(&#39;plot&#39;)
+)
+
+
+# Define the server code
+server &lt;- function(input, output) {
+  output$plot &lt;- renderPlot({
+    hist(runif(input$n))
+  })
+}
+
+# Return a Shiny app object by uncommenting the below (congratulations!)
+# shinyApp(ui = ui, server = server)</code></pre>
+<p>Rstudio has a great tutorial that you can start to work through <a href="https://shiny.rstudio.com/articles/">here</a>.</p>
+<p>I’ll save the self deployment of shiny apps through your own instance for another article as this will be a bit lengthy in itself but you can deploy your apps using <a href="https://www.shinyapps.io/">Shinyapps.io</a> which is also owned by Rstudio. They have pricing tiers for very low usage at $0 right through to enterprise plans that include the authentication and load balancing you will need at some point. By publishing even this example app through them you will get to see just how easy it could be to share your data insights through dashboards.</p>
+<p>Having seen the power of sharing insights like this my regret is I wasn’t introduced to R and Shiny earlier in my career. I wasted so much time learning excel rather than mastering this, which can be applied across many segments.</p>
+<p>If you want some more inspiration, here’s one more link through to the <a href="https://blog.rstudio.com/2020/07/13/winners-of-the-2nd-shiny-contest/">2020 Annual Shiny Contest</a> where you can see the broad assortment of use cases.</p>
+
+    </div>
+    <p class="terms">
+  
+  
+  Categories:
+  
+  <a href='/categories/r'>R</a>
+  
+  
+  
+  
+  Tags:
+  
+  <a href='/tags/r'>R</a>
+  
+  <a href='/tags/shiny'>Shiny</a>
+  
+  <a href='/tags/data-science'>Data Science</a>
+  
+  
+  
+</p>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+<script src="/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-172912816-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+  </body>
+</html>
+

@@ -61,6 +61,7 @@ Here is a snippet of code that you can use to shortcut these ads in the future:
 </script>
 ```
 <p>Right, so I think we have now covered:</p>
+
 <p>1. How to get an adsense account for your blog advertisements</p>
 <p>2. How to verify your site and where to put the script in your Blogdown powered Hugo site</p>
 <p>3. The code to put in your blog posts to allow the ad content to appear where you want it to</p>

@@ -1,7 +1,7 @@
 ---
 title: Using the i2dash R package for interactive visualisations
 author: Matt Rowse
-date: '2020-07-29'
+date: '2020-07-28'
 slug: using-the-i2dash-r-package-for-interactive-visualisations
 categories:
   - R
@@ -9,6 +9,7 @@ tags:
   - R
   - Shiny
   - i2dash
+  - Leaflet
 ---
 Keeping up with the huge range of R packages released and updates to existing packages can be time consuming and difficult, though important to monitor as there can be innovations that will save you time, if you are aware of them.
 

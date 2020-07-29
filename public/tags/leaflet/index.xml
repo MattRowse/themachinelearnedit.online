@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Leaflet on The Machine Learned It Online</title>
+    <link>/tags/leaflet/</link>
+    <description>Recent content in Leaflet on The Machine Learned It Online</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 28 Jul 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/leaflet/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Using the i2dash R package for interactive visualisations</title>
+      <link>/2020/07/28/using-the-i2dash-r-package-for-interactive-visualisations/</link>
+      <pubDate>Tue, 28 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/07/28/using-the-i2dash-r-package-for-interactive-visualisations/</guid>
+      <description>Keeping up with the huge range of R packages released and updates to existing packages can be time consuming and difficult, though important to monitor as there can be innovations that will save you time, if you are aware of them.
+One of the recent releases is the i2dash package for interactive visualisations in R. Now how helpful this is for you may depend on your expertise (or not) in developing shiny web applications.</description>
+    </item>
+    
+  </channel>
+</rss>

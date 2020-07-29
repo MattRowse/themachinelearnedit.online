@@ -3,17 +3,62 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/categories/</loc>
+    <lastmod>2020-07-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/i2dash/</loc>
+    <lastmod>2020-07-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/leaflet/</loc>
+    <lastmod>2020-07-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2020-07-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/r/</loc>
+    <lastmod>2020-07-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/r/</loc>
+    <lastmod>2020-07-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/shiny/</loc>
+    <lastmod>2020-07-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-07-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-07-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020/07/28/using-the-i2dash-r-package-for-interactive-visualisations/</loc>
+    <lastmod>2020-07-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/adsense/</loc>
     <lastmod>2020-07-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/blogdown/</loc>
-    <lastmod>2020-07-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
     <lastmod>2020-07-20T00:00:00+00:00</lastmod>
   </url>
   
@@ -33,37 +78,7 @@
   </url>
   
   <url>
-    <loc>/post/</loc>
-    <lastmod>2020-07-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/r/</loc>
-    <lastmod>2020-07-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/r/</loc>
-    <lastmod>2020-07-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2020-07-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2020-07-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/data-science/</loc>
-    <lastmod>2020-07-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/shiny/</loc>
     <lastmod>2020-07-19T00:00:00+00:00</lastmod>
   </url>
   
@@ -145,6 +160,10 @@
   <url>
     <loc>/tags/r-markdown/</loc>
     <lastmod>2020-07-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/1/01/01/my-test-dashboard/</loc>
   </url>
   
 </urlset>

@@ -6,10 +6,20 @@
     <description>Recent content on The Machine Learned It Online</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Using the i2dash R package for interactive visualisations</title>
+      <link>/2020/07/28/using-the-i2dash-r-package-for-interactive-visualisations/</link>
+      <pubDate>Tue, 28 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/07/28/using-the-i2dash-r-package-for-interactive-visualisations/</guid>
+      <description>Keeping up with the huge range of R packages released and updates to existing packages can be time consuming and difficult, though important to monitor as there can be innovations that will save you time, if you are aware of them.
+One of the recent releases is the i2dash package for interactive visualisations in R. Now how helpful this is for you may depend on your expertise (or not) in developing shiny web applications.</description>
+    </item>
     
     <item>
       <title>How do I add Google adsense code to my Blogdown Hugo site?</title>
@@ -70,6 +80,15 @@ I can’t remember where I saw this tip but for me it was the decider and someth
       <guid>/2020/07/15/hello-world-powered-by-bookdown-hugo-netlify/</guid>
       <description>But, why?Over the last year, I have been fortunate to have time to reflect and refocus on what is important to me personally and professionally, taking learnings away from a career in Retail Management, eCommerce Operations &amp;amp; Fulfilment.
 Having had exposure to high level decision making in an eCommerce world inside a large multi brand corporate, it has become increasingly clear to me that handling big data to gain and share insights would be the next business frontier.</description>
+    </item>
+    
+    <item>
+      <title>My Test Dashboard</title>
+      <link>/1/01/01/my-test-dashboard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/1/01/01/my-test-dashboard/</guid>
+      <description># Deal with operation within a switchr environmentif (any(grepl(pattern = &amp;quot;.switchr&amp;quot;, x = .libPaths()))) {switchr::switchrNoUnload(TRUE)}# Make it possible to reuse chunk labelsoptions(knitr.duplicate.label = &amp;quot;allow&amp;quot;)# Set datadir variable, components should fetch their env from here!datadir &amp;lt;- &amp;quot;C:/Users/mattr/OneDrive/Documents/R/themachinelearnedit.online&amp;quot;# Set up color mappingscolormaps &amp;lt;- list()Home PageColumnPlotly exampleif (!requireNamespace(&amp;quot;plotly&amp;quot;, quietly = TRUE)) {stop(&amp;#39;The package &amp;quot;plotly&amp;quot; is needed to embed objects of class &amp;quot;plotly&amp;quot;.</description>
     </item>
     
   </channel>

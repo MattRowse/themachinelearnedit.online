@@ -1,0 +1,146 @@
+---
+title: Using the i2dash R package for interactive visualisations
+author: Matt Rowse
+date: '2020-07-29'
+slug: using-the-i2dash-r-package-for-interactive-visualisations
+categories:
+  - R
+tags:
+  - R
+  - Shiny
+  - i2dash
+---
+Keeping up with the huge range of R packages released and updates to existing packages can be time consuming and difficult, though important to monitor as there can be innovations that will save you time, if you are aware of them.
+
+One of the recent releases is the i2dash package for interactive visualisations in R. Now how helpful this is for you may depend on your expertise (or not) in developing shiny web applications.
+
+For me as an amateur R programmer, learning the R language and shiny together is challenging to provide sufficient focus on one new piece of programming vs two, though I know I will need to be a higher level expert in both at some stage.
+
+This is where the i2dash package fits in perfectly for me, as it builds a really user friendly structure on top of shiny and flexdashboard, using components. Sounds prety cool huh? Yes, it is and I could wax lyrical for a bit about it but I think the best way to display the capabilities will be with some practical examples to code along to.
+
+We'll start by checking for and installing some packages if required, including the new i2dash package, tidyverse just because and leaflet, to show off the mapping interactions with i2dash. If this is the first time installing these packages on your machine it may take a minute to download and unpack but well worth the wait.
+
+```{r}
+if(!require(i2dash))install.packages("i2dash", repos = "http://cran.us.r-project.org")
+
+if(!require(tidyverse))install.packages("tidyverse", repos = "http://cran.us.r-project.org")
+
+if(!require(leaflet))install.packages("leaflet", repos = "http://cran.us.r-project.org")
+
+if(!require(plotly))install.packages("plotly", repos = "http://cran.us.r-project.org")
+```
+
+Now R comes pre-loaded with some useful datasets to experiment with and we might as well use one of these whch I know you can follow along with. The cars data set is
+```{r}
+cat("The sample cars dataset has", ncol(cars),"columns and", nrow(cars),"rows with the speed and stopping distance of cars. You can view more about this data by typing ?cars in the console.")
+```
+I suppose no data science project is complete without a little exploratory data analysis, so lets have a quick look at this through ggplot, which you installed with the tidyverse package.
+```{r message=FALSE, warning=FALSE}
+cars %>% ggplot(aes(speed, dist)) + geom_point() + geom_smooth() + ggtitle("Vehicle Speed vs Stopping Distance") +
+  labs(x = "Vehicle Speed (mph)", y = "Stopping Distance (ft)")
+```
+I guess I should be a bit more careful with the acceleratior when driving..Now so you can see the visualisation in a plotly object before we add it to a dashboard, lets create one.
+```{r}
+a <- cars %>% ggplot(aes(speed, dist)) + geom_point()+labs(title = "Vehicle Speed vs Stopping Distance", x = "Vehicle Speed (mph)", y = "Stopping Distance (ft)")
+ggplotly(a)
+```
+Hopefully you have an interactive version of the plot which I personally prefer, as it allows the user to analyse and answer their own questions, rather than needing a bespoke plot created for their answer. Please note this is a simple example of a plotly object also and you can do much more with this package too but I'll save that for another post.
+
+Right now for the i2dash package - lets take a look at the help file for this package. After learning R for the last year or so, this is my go-to approach when looking for examples.
+```{r}
+?i2dash
+```
+Have a read through that documentation or refer to it as required, depending on your learning style but just know that it is there, whenever you need it at the press of a ?
+
+```{r}
+# Create the dadshboard instance
+dashboard <- i2dashboard()
+# Add a title to the dashboard
+dashboard <- i2dashboard(title="My Test Dashboard",
+# Add authorship
+author="Matt",
+# Is this interactive?
+interactive = TRUE,
+# Add a theme to your dashboard (view them here https://rmarkdown.rstudio.com/flexdashboard/using.html#appearance)
+theme = "cosmo",
+# Provide a path to the project data
+# datadir = "path/to/workdir", #ie for me it is the below
+datadir = "C:/Users/mattr/OneDrive/Documents/R/themachinelearnedit.online")
+# inspect dashboard:
+show(dashboard)
+dashboard
+```
+All going to plan, you will get a message now showing that there is a flexdashboard running though there are 0 components, which makes sense as we haven't added them yet.
+
+This is where I and you may be introduced to a new and somehat familiar lookingpiece of code this %<>% which works like the pipe operator %>% but stores whatever you do on the right, back on the left. This is really hand for adding components so let's get to it.
+```{r}
+dashboard %<>%
+ add_page(
+  page = "home",
+  title = "Home Page",
+  layout = "focal_left",
+  menu = NULL #Don't need a home page link in the home page
+ )
+
+
+dashboard %<>%
+ add_page(
+  page = "cars_data",
+  title = "Cars Data",
+  layout = "focal_left",
+  menu = "My Menu Link"
+ ) %>% 
+# We can use the pipe above to continue building pages, very handy
+  add_page(
+    page = "my_home_town",
+    title = "Narangba",
+    layout = "focal_left",
+    menu = "My Menu Link"
+  )
+
+dashboard
+```
+Now when you run the dashboard, you will see there are a number of components which we can now add some content to.
+
+```{r}
+# Let's put in a map of where I live with the leaflet package
+leaflet_map <- leaflet() %>% 
+  addTiles() %>% 
+  # Location from longlat.net
+  addMarkers(lng =152.960180, lat =-27.203080, popup = "Themachinelearnedit.online")
+
+# Create an interactive plotly object
+plotly_object <- plot_ly(cars, x = cars$speed, y=cars$dist)
+
+# So this is easy to follow lets rename that ggplot we created earlier too
+ggplot_object <- cars %>% ggplot(aes(speed, dist)) + geom_point() + geom_smooth() + ggtitle("Vehicle Speed vs Stopping Distance") +
+  labs(x = "Vehicle Speed (mph)", y = "Stopping Distance (ft)")
+
+# Put the objects into the dashboard using the new pipe
+dashboard %<>%
+  add_component(leaflet_map,
+                page = "my_home_town",
+                title = "Sweet map")
+# Then the ggplot
+dashboard %<>%
+  add_component(ggplot_object,
+                page = "cars_data",
+                title = "Sweet plot")
+# And finally the plotly object
+dashboard %<>%
+  add_component(plotly_object,
+                page = "home",
+                title = "Plotly example")
+
+# Then we assemble this with the assemble function
+dashboard %>% assemble(file = "yourdashboard.rmd",
+                       pages = c("home", "cars_data", "my_home_town"))
+```
+Now that this has been assembled, in your folder there should be a file called "yourdashboard.rmd". Go ahead and open that up and at the top of the file, there's a little green play button that says "Run Document" - click it. :yeet: you just built your first dashboard with the i2dash package!
+
+While the test dashboard is fairly pointless I really think this could be used for a huge range of applications, to help solve your business or customer problem. Perhaps you have stores or locations that you want to display online or whatever - the sky is really the limit.
+
+You don't need to worry about editing the .rmd file you created, unless you are up to that skill level. I suppose this is where i2dash really helps by making a little complex simple.
+
+I hope you have enjoyed following this guide along as much as I enjoyed making it. Ciao.
+

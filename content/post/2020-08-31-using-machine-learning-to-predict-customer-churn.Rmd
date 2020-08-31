@@ -10,7 +10,7 @@ tags:
   - automl
   - R
 ---
-For the last year between my day job and family life I've been doing the edx Data Scientist certification, which has a stron focus on Machine Learning principles. The content and code stepped it up a level vs general analysis and sharing visualisations and now that I have completed this course I can honestly say automated machine learning is the way to go.
+For the last year between my day job and family life I've been doing the edx Data Scientist certification, which has a strong focus on Machine Learning principles. The content and code stepped it up a level vs general analysis and sharing visualisations - now that I have completed this course I can honestly say automated machine learning is the way to go.
 
 I suppose to some extent this is the bit where you get paid as you will know which tool to use to get the best outcome. Certainly not to say the course content wasn't required, as the background and understanding of more manual techniques is what allows the recognition of how powerful some methods are.
 
@@ -40,7 +40,7 @@ if(!require(h2o)) install.packages("h2o", repos = "http://cran.us.r-project.org"
 if(!require(ranger)) install.packages("ranger", repos = "http://cran.us.r-project.org")
 if(!require(prettydoc)) install.packages("prettydoc", repos = "http://cran.us.r-project.org")
 # Import data
-path <- "<wherever-you-put-it"
+path <- "C://Users/mattr/OneDrive/Documents/R/themachinelearnedit.online/data/churn_data.txt"
 data <- read.csv(path)
 ```
 
@@ -234,4 +234,6 @@ overall_results
 ## Conclusion
 It is possible to predict churn for this business with a reasonable level of accuracy and the recommendation would be to build a business case to understand the benefit of targeted promotions for churn predicted customers vs the cost of activation. The promotional cost of such an activity could be reduced by targeting customers with a higher probability of churning.
 
-It is clear that AML processes are very powerful also, though I could not have realised this, without having learned the science and programming background required for other methods - hard to believe such powerful tools are open source and freely available. 
+It is clear that AML processes are very powerful also, though I could not have realised this, without having learned the science and programming background required for other methods - hard to believe such powerful tools are open source and freely available. So, if you are looking to model churn for a saas or retail business, R is very capable for this requirement.
+
+If you think your dataset may be too large, this is most unlikely, especially if you use an on disk manipulation method like disk.frame, where the largest file I heard the developer open was about 160 billion rows and it took a couple of minutes to open. 

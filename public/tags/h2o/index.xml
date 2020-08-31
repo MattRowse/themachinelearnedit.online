@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>h2o on The Machine Learned It Online</title>
+    <link>/tags/h2o/</link>
+    <description>Recent content in h2o on The Machine Learned It Online</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 31 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/h2o/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Using Machine Learning to Predict Customer Churn</title>
+      <link>/2020/08/31/using-machine-learning-to-predict-customer-churn/</link>
+      <pubDate>Mon, 31 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/08/31/using-machine-learning-to-predict-customer-churn/</guid>
+      <description>For the last year between my day job and family life I’ve been doing the edx Data Scientist certification, which has a strong focus on Machine Learning principles. The content and code stepped it up a level vs general analysis and sharing visualisations - now that I have completed this course I can honestly say automated machine learning is the way to go.</description>
+    </item>
+    
+  </channel>
+</rss>

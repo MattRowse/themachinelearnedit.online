@@ -16,13 +16,13 @@ I suppose to some extent this is the bit where you get paid as you will know whi
 
 For me the h2o automl package has been a wonderful resource and I find it difficult to believe such a tool is open source and free to use. Lets use this sutomated machine learning technique on customer data from a SaaS company to predict churn and compare accuracy with a standard untuned randomforest algorithm.
 
-In the below code the data is available from Kaggle [here](https://www.kaggle.com/blastchar/telco-customer-churn?select=WA_Fn-UseC_-Telco-Customer-Churn.csv).
+In the below code the data is available from Kaggle [here](https://www.kaggle.com/blastchar/telco-customer-churn?select=WA_Fn-UseC_-Telco-Customer-Churn.csv). Download this, change the location of the data to read in the csv and you can see the churn visualisations and the churn probability.
 
 The data consists of 7043 unique customer values, with 21 columns and an overall target "Churn" column.
 
 My objective in this project is to initially analyse and provide insights from the data and ultimately use this to train a Churn prediction model which could be used for busines purposes.
 
-```{r setup, include=FALSE}
+```
 knitr::opts_chunk$set(echo = TRUE)
 # Load packages
 if(!require(tidyverse)) install.packages("tidyverse", repos = "http://cran.us.r-project.org")
@@ -39,12 +39,15 @@ if(!require(Boruta)) install.packages("Boruta", repos = "http://cran.us.r-projec
 if(!require(h2o)) install.packages("h2o", repos = "http://cran.us.r-project.org")
 if(!require(ranger)) install.packages("ranger", repos = "http://cran.us.r-project.org")
 if(!require(prettydoc)) install.packages("prettydoc", repos = "http://cran.us.r-project.org")
+```
+
+```
 # Import data
 path <- "C://Users/mattr/OneDrive/Documents/R/themachinelearnedit.online/data/churn_data.txt"
 data <- read.csv(path)
 ```
 
-```{r}
+```
 # Perform initial checks of the data
 str(data)
 missmap(data)
@@ -55,7 +58,7 @@ Note there are a small number of missing values in the 'TotalCharges' observatio
 
 It appears the SeniorCitizen observations have unique values of either 0 or 1 and are actually a factor and these formats will be coerced.
 
-```{r}
+```
 # Replace the na total charges with the mean
 data <- data  %>% 
   mutate(TotalCharges = if_else(is.na(TotalCharges) == TRUE,
@@ -76,7 +79,7 @@ Now that the dataset is complete let's gather some some insights through explora
 
 The aim here is to understand key insights for why customers may be churning to identify trends, which can provide a basis for future strategy.
 
-```{r message=FALSE}
+```
 # Churn vs internet service
 data %>% ggplot(aes(InternetService, TotalCharges, fill = Churn))+
   geom_col()+
@@ -160,7 +163,7 @@ ggplotly(plota)
 ## Feature Importance
 Now that we have some initial eda lets use machine learning to understand what features are the most predictive for churn and which are not. Boruta uses a powerful randomforest algorithm to calculate importance.
 
-```{r}
+```
 set.seed(1)
 # For ease lets remove the customer identification
 boruta_data <- data[complete.cases(data[]),] %>%
@@ -183,7 +186,7 @@ getSelectedAttributes(boruta_output, withTentative = F)
 ## Modelling
 Now we will create training and test sets, with a caret powered randomforest and an automated machine learning package, h2o to compare results. From a business case perspective, an accurate predictive model could be used to fire targeted offers at customers with predicted churn.
 
-```{r}
+```
 # Remove unimportant features
 data <- data %>% select(-gender, -customerID)
 # Split the data into training and validation sets
@@ -205,7 +208,7 @@ rf.accuracy <- rf_result$overall['Accuracy']
 
 ## Automated Machine Learning (AML)
 Now we'll use an automated alogorithm that searches for the best fit model including stacked ensembles and compare results.
-```{r message=FALSE}
+```
 set.seed(1234)
 # Use the h2o package to create a best fit stacked ensemble
 h2o.init()

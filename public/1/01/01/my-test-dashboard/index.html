@@ -107,17 +107,17 @@ datadir &lt;- &quot;C:/Users/mattr/OneDrive/Documents/R/themachinelearnedit.onli
 colormaps &lt;- list()</code></pre>
 <div id="section-home-page" class="section level1" data-navmenu="">
 <h1>Home Page</h1>
-<!-- Page created on 2020-07-29 19:04:41 -->
+<!-- Page created on 2020-08-31 20:30:33 -->
 <div id="section-column" class="section level2" data-width="600">
 <h2>Column</h2>
 <div id="section-plotly-example" class="section level3">
 <h3>Plotly example</h3>
-<!-- Component created on 2020-07-29 19:04:40 -->
+<!-- Component created on 2020-08-31 20:30:32 -->
 <pre class="r"><code>if (!requireNamespace(&quot;plotly&quot;, quietly = TRUE)) {
     stop(&#39;The package &quot;plotly&quot; is needed to embed objects of class &quot;plotly&quot;.&#39;, call. = FALSE)
 }
 
-vis_obj_cDr3pL &lt;- readRDS(file.path(datadir, &#39;obj_cDr3pL.rds&#39;))
+vis_obj_XyEPWr &lt;- readRDS(file.path(datadir, &#39;obj_XyEPWr.rds&#39;))
 
 # workaround for plotly dependencies issue (https://github.com/ropensci/plotly/issues/1044)
 # 
@@ -129,10 +129,10 @@ fix_dependency &lt;- function(dependency){
   return(dependency)
 }
 if (&quot;plotly&quot; == &quot;plotly&quot;){
-  vis_obj_cDr3pL$dependencies &lt;- lapply(vis_obj_cDr3pL$dependencies, fix_dependency)  
+  vis_obj_XyEPWr$dependencies &lt;- lapply(vis_obj_XyEPWr$dependencies, fix_dependency)  
 }
 
-vis_obj_cDr3pL</code></pre>
+vis_obj_XyEPWr</code></pre>
 <pre><code>## No trace type specified:
 ##   Based on info supplied, a &#39;scatter&#39; trace seems appropriate.
 ##   Read more about this trace type -&gt; https://plot.ly/r/reference/#scatter</code></pre>
@@ -145,7 +145,7 @@ vis_obj_cDr3pL</code></pre>
 ## This warning is displayed once every 8 hours.
 ## Call `lifecycle::last_warnings()` to see where this warning was generated.</code></pre>
 <div id="htmlwidget-1" style="width:672px;height:480px;" class="plotly html-widget"></div>
-<script type="application/json" data-for="htmlwidget-1">{"x":{"visdat":{"2f5870f47a60":["function () ","plotlyVisDat"]},"cur_data":"2f5870f47a60","attrs":{"2f5870f47a60":{"x":[4,4,7,7,8,9,10,10,10,11,11,12,12,12,12,13,13,13,13,14,14,14,14,15,15,15,16,16,17,17,17,18,18,18,18,19,19,19,20,20,20,20,20,22,23,24,24,24,24,25],"y":[2,10,4,22,16,10,18,26,34,17,28,14,20,24,28,26,34,34,46,26,36,60,80,20,26,54,32,40,32,40,50,42,56,76,84,36,46,68,32,48,52,56,64,66,54,70,92,93,120,85],"alpha_stroke":1,"sizes":[10,100],"spans":[1,20]}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"automargin":true,"title":[]},"yaxis":{"domain":[0,1],"automargin":true,"title":[]},"hovermode":"closest","showlegend":false},"source":"A","config":{"showSendToCloud":false},"data":[{"x":[4,4,7,7,8,9,10,10,10,11,11,12,12,12,12,13,13,13,13,14,14,14,14,15,15,15,16,16,17,17,17,18,18,18,18,19,19,19,20,20,20,20,20,22,23,24,24,24,24,25],"y":[2,10,4,22,16,10,18,26,34,17,28,14,20,24,28,26,34,34,46,26,36,60,80,20,26,54,32,40,32,40,50,42,56,76,84,36,46,68,32,48,52,56,64,66,54,70,92,93,120,85],"type":"scatter","mode":"markers","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"visdat":{"329475da4b44":["function () ","plotlyVisDat"]},"cur_data":"329475da4b44","attrs":{"329475da4b44":{"x":[4,4,7,7,8,9,10,10,10,11,11,12,12,12,12,13,13,13,13,14,14,14,14,15,15,15,16,16,17,17,17,18,18,18,18,19,19,19,20,20,20,20,20,22,23,24,24,24,24,25],"y":[2,10,4,22,16,10,18,26,34,17,28,14,20,24,28,26,34,34,46,26,36,60,80,20,26,54,32,40,32,40,50,42,56,76,84,36,46,68,32,48,52,56,64,66,54,70,92,93,120,85],"alpha_stroke":1,"sizes":[10,100],"spans":[1,20]}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"automargin":true,"title":[]},"yaxis":{"domain":[0,1],"automargin":true,"title":[]},"hovermode":"closest","showlegend":false},"source":"A","config":{"showSendToCloud":false},"data":[{"x":[4,4,7,7,8,9,10,10,10,11,11,12,12,12,12,13,13,13,13,14,14,14,14,15,15,15,16,16,17,17,17,18,18,18,18,19,19,19,20,20,20,20,20,22,23,24,24,24,24,25],"y":[2,10,4,22,16,10,18,26,34,17,28,14,20,24,28,26,34,34,46,26,36,60,80,20,26,54,32,40,32,40,50,42,56,76,84,36,46,68,32,48,52,56,64,66,54,70,92,93,120,85],"type":"scatter","mode":"markers","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <div id="section-column-1" class="section level2" data-width="400">
@@ -154,17 +154,17 @@ vis_obj_cDr3pL</code></pre>
 </div>
 <div id="section-cars-data" class="section level1" data-navmenu="My Menu Link">
 <h1>Cars Data</h1>
-<!-- Page created on 2020-07-29 19:04:41 -->
+<!-- Page created on 2020-08-31 20:30:33 -->
 <div id="section-column-2" class="section level2" data-width="600">
 <h2>Column</h2>
 <div id="section-sweet-plot" class="section level3">
 <h3>Sweet plot</h3>
-<!-- Component created on 2020-07-29 19:04:39 -->
+<!-- Component created on 2020-08-31 20:30:32 -->
 <pre class="r"><code>if (!requireNamespace(&quot;ggplot2&quot;, quietly = TRUE)) {
     stop(&#39;The package &quot;ggplot2&quot; is needed to embed objects of class &quot;gg&quot;.&#39;, call. = FALSE)
 }
 
-vis_obj_ECBQJh &lt;- readRDS(file.path(datadir, &#39;obj_ECBQJh.rds&#39;))
+vis_obj_ijXOIq &lt;- readRDS(file.path(datadir, &#39;obj_ijXOIq.rds&#39;))
 
 # workaround for plotly dependencies issue (https://github.com/ropensci/plotly/issues/1044)
 # 
@@ -176,10 +176,10 @@ fix_dependency &lt;- function(dependency){
   return(dependency)
 }
 if (&quot;ggplot2&quot; == &quot;plotly&quot;){
-  vis_obj_ECBQJh$dependencies &lt;- lapply(vis_obj_ECBQJh$dependencies, fix_dependency)  
+  vis_obj_ijXOIq$dependencies &lt;- lapply(vis_obj_ijXOIq$dependencies, fix_dependency)  
 }
 
-vis_obj_ECBQJh</code></pre>
+vis_obj_ijXOIq</code></pre>
 <pre><code>## `geom_smooth()` using method = &#39;loess&#39; and formula &#39;y ~ x&#39;</code></pre>
 <p><img src="/post/yourdashboard_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
 </div>
@@ -190,17 +190,17 @@ vis_obj_ECBQJh</code></pre>
 </div>
 <div id="section-narangba" class="section level1" data-navmenu="My Menu Link">
 <h1>Narangba</h1>
-<!-- Page created on 2020-07-29 19:04:41 -->
+<!-- Page created on 2020-08-31 20:30:33 -->
 <div id="section-column-4" class="section level2" data-width="600">
 <h2>Column</h2>
 <div id="section-sweet-map" class="section level3">
 <h3>Sweet map</h3>
-<!-- Component created on 2020-07-29 19:04:39 -->
+<!-- Component created on 2020-08-31 20:30:31 -->
 <pre class="r"><code>if (!requireNamespace(&quot;leaflet&quot;, quietly = TRUE)) {
     stop(&#39;The package &quot;leaflet&quot; is needed to embed objects of class &quot;leaflet&quot;.&#39;, call. = FALSE)
 }
 
-vis_obj_4q5x7r &lt;- readRDS(file.path(datadir, &#39;obj_4q5x7r.rds&#39;))
+vis_obj_3izDlX &lt;- readRDS(file.path(datadir, &#39;obj_3izDlX.rds&#39;))
 
 # workaround for plotly dependencies issue (https://github.com/ropensci/plotly/issues/1044)
 # 
@@ -212,10 +212,10 @@ fix_dependency &lt;- function(dependency){
   return(dependency)
 }
 if (&quot;leaflet&quot; == &quot;plotly&quot;){
-  vis_obj_4q5x7r$dependencies &lt;- lapply(vis_obj_4q5x7r$dependencies, fix_dependency)  
+  vis_obj_3izDlX$dependencies &lt;- lapply(vis_obj_3izDlX$dependencies, fix_dependency)  
 }
 
-vis_obj_4q5x7r</code></pre>
+vis_obj_3izDlX</code></pre>
 <div id="htmlwidget-2" style="width:672px;height:480px;" class="leaflet html-widget"></div>
 <script type="application/json" data-for="htmlwidget-2">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[-27.20308,152.96018,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Themachinelearnedit.online",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[-27.20308,-27.20308],"lng":[152.96018,152.96018]}},"evals":[],"jsHooks":[]}</script>
 </div>

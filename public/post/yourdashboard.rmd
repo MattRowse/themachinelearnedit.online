@@ -29,7 +29,7 @@ colormaps <- list()
 Home Page {data-navmenu=""}
 ====================================================
 
-<!-- Page created on 2020-07-29 19:04:41 -->
+<!-- Page created on 2020-08-31 20:30:33 -->
 
 
 Column {data-width=600}
@@ -37,14 +37,14 @@ Column {data-width=600}
     
 ### Plotly example
 
-<!-- Component created on 2020-07-29 19:04:40 -->
+<!-- Component created on 2020-08-31 20:30:32 -->
 
 ```{r}
 if (!requireNamespace("plotly", quietly = TRUE)) {
     stop('The package "plotly" is needed to embed objects of class "plotly".', call. = FALSE)
 }
 
-vis_obj_cDr3pL <- readRDS(file.path(datadir, 'obj_cDr3pL.rds'))
+vis_obj_XyEPWr <- readRDS(file.path(datadir, 'obj_XyEPWr.rds'))
 
 # workaround for plotly dependencies issue (https://github.com/ropensci/plotly/issues/1044)
 # 
@@ -56,10 +56,10 @@ fix_dependency <- function(dependency){
   return(dependency)
 }
 if ("plotly" == "plotly"){
-  vis_obj_cDr3pL$dependencies <- lapply(vis_obj_cDr3pL$dependencies, fix_dependency)  
+  vis_obj_XyEPWr$dependencies <- lapply(vis_obj_XyEPWr$dependencies, fix_dependency)  
 }
 
-vis_obj_cDr3pL
+vis_obj_XyEPWr
 ```
 
 
@@ -74,7 +74,7 @@ Column {data-width=400}
 Cars Data {data-navmenu="My Menu Link"}
 ====================================================
 
-<!-- Page created on 2020-07-29 19:04:41 -->
+<!-- Page created on 2020-08-31 20:30:33 -->
 
 
 Column {data-width=600}
@@ -82,14 +82,14 @@ Column {data-width=600}
     
 ### Sweet plot
 
-<!-- Component created on 2020-07-29 19:04:39 -->
+<!-- Component created on 2020-08-31 20:30:32 -->
 
 ```{r}
 if (!requireNamespace("ggplot2", quietly = TRUE)) {
     stop('The package "ggplot2" is needed to embed objects of class "gg".', call. = FALSE)
 }
 
-vis_obj_ECBQJh <- readRDS(file.path(datadir, 'obj_ECBQJh.rds'))
+vis_obj_ijXOIq <- readRDS(file.path(datadir, 'obj_ijXOIq.rds'))
 
 # workaround for plotly dependencies issue (https://github.com/ropensci/plotly/issues/1044)
 # 
@@ -101,10 +101,10 @@ fix_dependency <- function(dependency){
   return(dependency)
 }
 if ("ggplot2" == "plotly"){
-  vis_obj_ECBQJh$dependencies <- lapply(vis_obj_ECBQJh$dependencies, fix_dependency)  
+  vis_obj_ijXOIq$dependencies <- lapply(vis_obj_ijXOIq$dependencies, fix_dependency)  
 }
 
-vis_obj_ECBQJh
+vis_obj_ijXOIq
 ```
 
 
@@ -119,7 +119,7 @@ Column {data-width=400}
 Narangba {data-navmenu="My Menu Link"}
 ====================================================
 
-<!-- Page created on 2020-07-29 19:04:41 -->
+<!-- Page created on 2020-08-31 20:30:33 -->
 
 
 Column {data-width=600}
@@ -127,14 +127,14 @@ Column {data-width=600}
     
 ### Sweet map
 
-<!-- Component created on 2020-07-29 19:04:39 -->
+<!-- Component created on 2020-08-31 20:30:31 -->
 
 ```{r}
 if (!requireNamespace("leaflet", quietly = TRUE)) {
     stop('The package "leaflet" is needed to embed objects of class "leaflet".', call. = FALSE)
 }
 
-vis_obj_4q5x7r <- readRDS(file.path(datadir, 'obj_4q5x7r.rds'))
+vis_obj_3izDlX <- readRDS(file.path(datadir, 'obj_3izDlX.rds'))
 
 # workaround for plotly dependencies issue (https://github.com/ropensci/plotly/issues/1044)
 # 
@@ -146,10 +146,10 @@ fix_dependency <- function(dependency){
   return(dependency)
 }
 if ("leaflet" == "plotly"){
-  vis_obj_4q5x7r$dependencies <- lapply(vis_obj_4q5x7r$dependencies, fix_dependency)  
+  vis_obj_3izDlX$dependencies <- lapply(vis_obj_3izDlX$dependencies, fix_dependency)  
 }
 
-vis_obj_4q5x7r
+vis_obj_3izDlX
 ```
 
 
